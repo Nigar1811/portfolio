@@ -18,6 +18,80 @@
 :root {
 
   /**
+   * New attractive colors
+   */
+
+  /* gradient backgrounds */
+  --bg-gradient-primary: linear-gradient(
+    to bottom right,
+    hsl(220, 90%, 96%) 0%,
+    hsl(220, 85%, 92%) 100%
+  );
+  --bg-gradient-secondary: linear-gradient(
+    to bottom right,
+    hsl(240, 100%, 95%) 0%,
+    hsl(220, 100%, 97%) 100%
+  );
+
+  --border-gradient-light: linear-gradient(
+    to bottom right,
+    hsl(210, 50%, 85%) 0%,
+    hsla(210, 50%, 85%, 0) 100%
+  );
+
+  --text-gradient-blue: linear-gradient(
+    to right,
+    hsl(220, 90%, 60%),
+    hsl(220, 80%, 50%)
+  );
+
+  /* solid colors */
+  --blue-dark: hsl(220, 90%, 40%);
+  --blue-light: hsl(220, 90%, 70%);
+  --sky-blue: hsl(200, 100%, 85%);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --light-gray: hsl(0, 0%, 90%);
+  --medium-gray: hsl(0, 0%, 70%);
+  --black-light: hsl(220, 15%, 20%);
+
+  /**
+   * typography
+   */
+  --ff-poppins: 'Poppins', sans-serif;
+
+  --fs-1: 24px;
+  --fs-2: 18px;
+  --fs-3: 17px;
+  --fs-4: 16px;
+  --fs-5: 15px;
+  --fs-6: 14px;
+  --fs-7: 13px;
+  --fs-8: 11px;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+
+  /**
+   * shadow
+   */
+  --shadow-light: 0 8px 20px hsla(210, 50%, 75%, 0.3);
+  --shadow-medium: 0 12px 30px hsla(210, 50%, 60%, 0.3);
+  --shadow-strong: 0 24px 60px hsla(210, 50%, 40%, 0.2);
+
+  /**
+   * transition
+   */
+  --transition-1: 0.3s ease;
+  --transition-2: 0.6s ease-in-out;
+}
+
+/* 
+:root {
+
+  /**
    * colors
    */
 
@@ -109,7 +183,7 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 
-}
+} */
 
 
 
