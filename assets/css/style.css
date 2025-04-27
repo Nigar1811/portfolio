@@ -229,7 +229,13 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+/* body { background: var(--smoky-black); } */
+
+body {
+  background: var(--bg-gradient-primary);
+  color: var(--black-light);
+  font-family: var(--ff-poppins);
+}
 
 
 
