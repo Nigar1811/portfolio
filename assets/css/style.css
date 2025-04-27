@@ -205,15 +205,58 @@ li { list-style: none; }
 
 img, ion-icon, a, button, time, span { display: block; }
 
-button {
+/* button {
   font: inherit;
   background: none;
   border: none;
   text-align: left;
   cursor: pointer;
+} */
+
+button {
+  font: inherit;
+  background: var(--blue-dark);
+  color: var(--white-1);
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background var(--transition-1), transform var(--transition-1);
+}
+button:hover {
+  background: var(--blue-light);
+  transform: translateY(-2px);
+}
+input, textarea {
+  display: block;
+  width: 100%;
+  background: var(--white-2);
+  color: var(--black-light);
+  font: inherit;
+  padding: 0.8rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  transition: border-color var(--transition-1), box-shadow var(--transition-1);
 }
 
-input, textarea {
+input:focus, textarea:focus {
+  border-color: var(--blue-dark);
+  box-shadow: 0 0 0 3px hsla(220, 90%, 70%, 0.4);
+  outline: none;
+}
+
+::selection {
+  background: var(--blue-light);
+  color: var(--white-1);
+}
+
+:focus {
+  outline-color: var(--blue-light);
+}
+
+/* input, textarea {
   display: block;
   width: 100%;
   background: none;
@@ -223,7 +266,7 @@ input, textarea {
 ::selection {
   background: var(--orange-yellow-crayola);
   color: var(--smoky-black);
-}
+} */
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
@@ -231,10 +274,24 @@ html { font-family: var(--ff-poppins); }
 
 /* body { background: var(--smoky-black); } */
 
+/* body {
+  background: var(--bg-gradient-primary);
+  color: var(--black-light);
+  font-family: var(--ff-poppins);
+} */
+
 body {
   background: var(--bg-gradient-primary);
   color: var(--black-light);
   font-family: var(--ff-poppins);
+  font-size: var(--fs-4);
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
